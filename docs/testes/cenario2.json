@@ -1,0 +1,42 @@
+{
+  "id": 2,
+  "titulo": "Registro de saída com estoque disponível",
+  "dadosUsados": {
+    "produto_id": 3,
+    "saldo": 12,
+    "tipo": "saida",
+    "quantidade": 5,
+    "usuario_id": 1
+  },
+  "esperado": "O sistema deve autorizar a retirada de 5 unidades, reduzir o estoque de 12 para 7 e registrar a movimentação com a data, hora e identificação do usuário responsável.",
+  "resposta": {
+    "data": "<data/hora retornada na execução>",
+    "id": "<id gerado>",
+    "produto_id": 3,
+    "usuario_id": 1,
+    "tipo": "saida",
+    "quantidade": 5,
+    "quantidade_estoque": 7
+  },
+  "saldoAntes": 12,
+  "saldoDepois": 7,
+  "movimentacoes": [
+    {
+      "id": "<id gerado>",
+      "produto_id": 3,
+      "usuario_id": 1,
+      "tipo": "saida",
+      "quantidade": 5,
+      "data": "<data/hora registrada>"
+    }
+  ],
+  "dataExecucao": "<data/hora real do teste>",
+  "fuso": "America/Sao_Paulo",
+  "bancoTeste": "<nome do banco utilizado>",
+  "plano": {
+    "arquivo": "docs/plano_testes.docx",
+    "sha256": "<hash real do arquivo utilizado>",
+    "lidoAntesDaExecucao": true
+  },
+  "conclusao": "Pendente de execução. O teste será aprovado se a saída for registrada, o saldo final for 7 e a movimentação apresentar a data, hora e o usuário responsável."
+}

@@ -1,0 +1,45 @@
+{
+  "id": 3,
+  "titulo": "Retirada total do estoque disponível",
+  "dadosUsados": {
+    "produto_id": 2,
+    "saldo": 15,
+    "tipo": "saida",
+    "quantidade": 15,
+    "usuario_id": 1
+  },
+  "esperado": "O sistema deve permitir a retirada de todas as 15 unidades disponíveis, registrar a movimentação e atualizar o estoque para zero, armazenando a data, hora e identificação do usuário responsável.",
+  "statusHTTP": 201,
+  "resposta": {
+ yyhh                           "data": "<data/hora retornada na execução>",
+    "id": "<id gerado>",
+    "produto_id": 2,
+    "usuario_id": 1,
+    "tipo": "saida",
+    "quantidade": 15,
+    "quantidade_estoque": 0,
+    "createdAt": "<data/hora de criação>",
+    "updatedAt": "<data/hora de atualização>"
+  },
+  "saldoAntes": 15,
+  "saldoDepois": 0,
+  "movimentacoes": [
+    {
+      "id": "<id gerado>",
+      "produto_id": 2,
+      "usuario_id": 1,
+      "tipo": "saida",
+      "quantidade": 15,
+      "data": "<data/hora registrada>"
+    }
+  ],
+  "dataExecucao": "<data/hora real do teste>",
+  "fuso": "America/Sao_Paulo",
+  "bancoTeste": "<nome do banco utilizado>",
+  "plano": {
+    "arquivo": "docs/plano_testes.docx",
+    "sha256": "<hash real do arquivo utilizado>",
+    "lidoAntesDaExecucao": true
+  },
+  "conclusao": "Pendente de execução. O teste será aprovado se o sistema registrar a saída de todas as unidades, atualizar o saldo para zero e armazenar corretamente a data, hora e o responsável."
+}

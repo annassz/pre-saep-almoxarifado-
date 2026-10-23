@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "titulo": "Bloqueio de retirada por falta de estoque",
+  "dadosUsados": {
+    "produto_id": 3,
+    "saldo": 8,
+    "tipo": "saida",
+    "quantidade": 10,
+    "usuario_id": 1
+  },
+  "esperado": "O sistema deve recusar a solicitação de retirada de 10 unidades, pois há apenas 8 disponíveis. Deve informar a quantidade existente e a solicitada, preservar o saldo e não registrar uma nova movimentação.",
+
+  "resposta": {
+    "mensagem": "Saída não permitida: estoque insuficiente. Disponível: 8. Solicitado: 10."
+  },
+  "saldoAntes": 8,
+  "saldoDepois": 8,
+  "movimentacoes": [],
+  "dataExecucao": "<data/hora real do teste>",
+  "fuso": "America/Sao_Paulo",
+  "bancoTeste": "<nome do banco utilizado>",
+  "plano": {
+    "arquivo": "docs/plano_testes.docx",
+    "sha256": "<hash real do arquivo utilizado>",
+    "lidoAntesDaExecucao": true
+  },
+  "conclusao": "Pendente de execução. O teste será aprovado se o sistema bloquear a retirada, informar o estoque disponível e a quantidade solicitada, preservar o saldo e não criar movimentação."
+}
