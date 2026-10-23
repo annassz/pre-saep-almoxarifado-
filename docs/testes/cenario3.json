@@ -11,7 +11,7 @@
   "esperado": "O sistema deve permitir a retirada de todas as 15 unidades disponíveis, registrar a movimentação e atualizar o estoque para zero, armazenando a data, hora e identificação do usuário responsável.",
   "statusHTTP": 201,
   "resposta": {
- yyhh                           "data": "<data/hora retornada na execução>",
+                               "data": "<data/hora retornada na execução>",
     "id": "<id gerado>",
     "produto_id": 2,
     "usuario_id": 1,
